@@ -26,7 +26,8 @@ const TypeTenant = () => {
 
   const onUpgradePlan = () => {
     window.open(
-      `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera saber que opciones tengo para mejorar mi plan. Mi tienda: '+slug.toUpperCase())}`,
+      `https://web.ferreteros.app/catalogos/actualizar-plan/${encodeURIComponent(slug.toUpperCase())}`,
+      // `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera saber que opciones tengo para mejorar mi plan. Mi tienda: '+slug.toUpperCase())}`,
       '_blank' // <- This is what makes it open in a new window.
     );
   }

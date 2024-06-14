@@ -17,31 +17,36 @@ const BannerTenant: React.FC<Props> = ({typeTenant, createdAt, slug, itExceeds})
   const onUpgradePlan = (value) => {
     if (value === 'getBetterPlan') {
       window.open(
-        `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera saber que opciones tengo para mejorar mi plan. Mi cuenta: '+slug.toUpperCase())}`,
+        `https://web.ferreteros.app/catalogos/actualizar-plan/${encodeURIComponent(slug.toUpperCase())}`,
+        // `https://web.ferreteros.app/catalogos/${encodeURIComponent('Hola quisiera saber que opciones tengo para mejorar mi plan. Mi cuenta: '+slug.toUpperCase())}`,
         '_blank' // <- This is what makes it open in a new window.
       );
     }
     if (value === 'extendDays') {
       window.open(
-        `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera extender mi periodo de prueba. Mi cuenta: '+slug.toUpperCase())}`,
+        `https://web.ferreteros.app/catalogos/extender-prueba/${encodeURIComponent(slug.toUpperCase())}`,
+        // `https://web.ferreteros.app/catalogos/extender-prueba/${encodeURIComponent('Hola quisiera extender mi periodo de prueba. Mi cuenta: '+slug.toUpperCase())}`,
         '_blank' // <- This is what makes it open in a new window.
       );
     }
     if (value === 'newPlan') {
       window.open(
-        `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera elegir un mejor Plan. Mi cuenta: '+slug.toUpperCase())}`,
+        `https://web.ferreteros.app/catalogos/actualizar-plan/${encodeURIComponent(slug.toUpperCase())}`,
+        // `https://web.ferreteros.app/catalogos/actualizar-plan/${encodeURIComponent('Hola quisiera elegir un mejor Plan. Mi cuenta: '+slug.toUpperCase())}`,
         '_blank' // <- This is what makes it open in a new window.
       );
     }
     if (value === 'promo') {
       window.open(
-        `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera saber más sobre las Promociones. Mi cuenta: '+slug.toUpperCase())}`,
+        `https://web.ferreteros.app/catalogos/promociones/${encodeURIComponent(slug.toUpperCase())}`,
+        // `https://web.ferreteros.app/catalogos/promociones/${encodeURIComponent('Hola quisiera saber más sobre las Promociones. Mi cuenta: '+slug.toUpperCase())}`,
         '_blank' // <- This is what makes it open in a new window.
       );
     }
     if (value === 'yanapay') {
       window.open(
-        `https://wa.me/${process.env.MANTAINER_PHONE}?text=${encodeURIComponent('Hola quisiera apoyo con respecto a mi tienda. Mi cuenta: '+slug.toUpperCase())}`,
+        `https://web.ferreteros.app/catalogos/ayuda/${encodeURIComponent(slug.toUpperCase())}`,
+        // `https://web.ferreteros.app/catalogos/ayuda/${encodeURIComponent('Hola quisiera apoyo con respecto a mi tienda. Mi cuenta: '+slug.toUpperCase())}`,
         '_blank' // <- This is what makes it open in a new window.
       );
     }

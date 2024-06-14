@@ -95,7 +95,8 @@ const AdminScreen: React.FC<Props> = (timestamp) => {
             </Stack>
             <Stack isInline spacing={{base: 0, sm: 8}}>
               <Link
-                href={`https://wa.me/${process.env.MANTAINER_PHONE}`}
+                isExternal
+                href={`https://web.ferreteros.app/catalogos/ayuda`}
                 lineHeight="normal"
               >
                 <IconButton

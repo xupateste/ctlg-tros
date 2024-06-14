@@ -17,9 +17,6 @@ const ResetPasswordSuccess: React.FC = () => {
         <Text color="primary.500">
           Email: {process.env.MANTAINER_EMAIL}
         </Text>
-        <Text color="primary.500">
-          WhatsApp: {process.env.MANTAINER_PHONE}
-        </Text>
         .
       </Text>
     </Stack>

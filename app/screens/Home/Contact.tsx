@@ -31,10 +31,10 @@ const Contact = () => {
           <Link
             isExternal
             fontWeight={500}
-            href={`https://wa.me/${process.env.MANTAINER_PHONE}`}
+            href={`https://web.ferreteros.app/catalogos/ayuda`}
             lineHeight="normal"
           >
-            {process.env.MANTAINER_PHONE}
+            {WhatsApp}
           </Link>
         </Stack>
       </Stack>
