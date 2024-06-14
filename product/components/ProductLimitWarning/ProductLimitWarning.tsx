@@ -26,7 +26,7 @@ const ProductLimitWarning: React.FC<Props> = ({onClose}) => (
         </Stack>
         <Link
           isExternal
-          href={`https://web.ferreteros.app/catalogos/actualizar-plan/${encodeURIComponent(slug.toUpperCase())}`}
+          href={`https://web.ferreteros.app/catalogos/actualizar-plan`}
           // href={`https://wa.me/${process.env.MANTAINER_PHONE}?text=Necesito un plan mejor para mi tienda`}
         >
           <WhatsAppButton marginTop={2}>Preguntanos por WhatsApp</WhatsAppButton>

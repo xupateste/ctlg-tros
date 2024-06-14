@@ -34,7 +34,7 @@ const Contact = () => {
             href={`https://web.ferreteros.app/catalogos/ayuda`}
             lineHeight="normal"
           >
-            {WhatsApp}
+            WhatsApp
           </Link>
         </Stack>
       </Stack>
