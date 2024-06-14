@@ -44,13 +44,14 @@ const LandingNavbar: React.FC<Props> = (props) => {
       <Flex
         bg='cyan.500'
         color='white'
-        minH={'85px'}
-        py={{ base: 2 }}
+        minH={'75px'}
+        pt={{ base: 2 }}
+        pb={{ base: 0 }}
         px={{ base: 4 }}
         align={'center'}>
         <Flex flex={{ base: 1 }} justify={{ base: 'left', md: 'start' }}>
           <Link href="/">
-            <Image h={10} mt="-8px" ml={2} src={'/assets/ferreteros-app.png'}></Image>
+            <Image h={12} mt="-8px" ml={2} src={'/assets/ferreteros-app.png'}></Image>
           </Link>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>

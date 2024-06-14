@@ -25,7 +25,7 @@ const Hero: React.FC<Props> = (props) => {
         py={{ base: 0, md: 35 }}>
         <Stack flex={1} spacing={{ base: 5, md: 3 }}>
           <Heading
-            lineHeight={1.2}
+            lineHeight={1.3}
             fontWeight={600}
             pt={8}
             fontSize={{ base: '3xl', sm: '4xl', lg: '5xl' }}>

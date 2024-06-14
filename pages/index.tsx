@@ -135,6 +135,11 @@ const Initio: React.FC = () => {
   const handleCheckChange = () => {
     setAcceptCheck(!acceptCheck)
   }
+
+  const [acceptTerms, setAcceptTerms] = React.useState(true);
+  const handleTermsChange = () => {
+    setAcceptTerms(!acceptTerms)
+  }
   
 
   const countryOptions = COUNTRIES.map(({ name, iso }) => ({
@@ -177,7 +182,7 @@ const Initio: React.FC = () => {
                 onClick={handleRegisterVisibility}
                 bg={'cyan.500'}
                 _hover={{ bg: 'cyan.600' }}>
-                Crear tienda
+                Crear catálogo
               </Button>
             </Stack>
           </Box>
@@ -328,6 +333,25 @@ const Initio: React.FC = () => {
                   name="accept"
                 >
                   <Checkbox
+                    isChecked={acceptTerms}
+                    isDisabled={isLoading}
+                    size="md"
+                    name="accept"
+                    onChange={handleTermsChange}>
+                    {"Acepto las "}
+                    <Link isExternal href="https://web.ferreteros.app/catalogos/terminos-y-condiciones">
+                      Condiciones del Servicio
+                    </Link>
+                    {" y las "}
+                    <Link isExternal href="https://web.ferreteros.app/catalogos/politica-de-privacidad">
+                      Políticas de Privacidad
+                    </Link>
+                  </Checkbox>
+                </FormControl>
+                <FormControl
+                  name="accept"
+                >
+                  <Checkbox
                     isChecked={acceptCheck}
                     isDisabled={isLoading}
                     size="md"
@@ -342,6 +366,7 @@ const Initio: React.FC = () => {
               <Button
                 w="full"
                 bg="cyan.500"
+                isDisabled={!acceptTerms}
                 size="lg"
                 color="white"
                 mr={3}

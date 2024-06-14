@@ -55,7 +55,9 @@ const Footer: React.FC<Props> = (props) => {
           flexGrow={1}/>
         <Flex w="100%" mt={5}>
           <Flex m="auto">
-            <Image src={'/assets/ferreteros-app.png'} h={12}/>         
+            <Link href="https://ferreteros.app">
+              <Image src={'/assets/ferreteros-app-standalone.png'} h={12}/>         
+            </Link>
           </Flex>
         </Flex>
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
